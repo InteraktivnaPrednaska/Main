@@ -1,0 +1,372 @@
+ @font-face {
+    font-family: Yanone Kaffeesatz;
+    src: url(YanoneKaffeesatz-Regular.otf);
+}
+
+html {
+  background: #eee;
+  color: #000;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+}
+header{
+	margin: 0;
+	width: 100%;
+	top: 2%;
+	}
+header:after{
+	width : 100%;
+	height: 2px;
+	margin-top: -0.3em;
+	content: "";
+	display: block;
+	background: linear-gradient(to right,
+							rgba(23,23,23, 0.2),
+							rgba(23,23,23, 1) 10%,
+							rgba(23,23,23, 0.1));
+}
+#user{
+	width: 35px;
+	height: 35px;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	right: 50px;
+	top: 0px;
+	opacity: 0.7;
+}
+#user:hover{
+	opacity: 1;
+}
+#pw{
+	display: none;
+	
+}
+#user:hover #pw{
+	display: block;
+	
+	
+	position: absolute;
+	right: 0px;
+}
+#user a{
+	float:left;
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;
+	width: 100px;
+	text-align: right;
+}
+
+header p{
+	padding-left: 10%;
+	margin: 0;
+	font-size: 2em;
+	color: rgb(23,23,23);
+}
+section{
+	width : 90%;
+	padding-left:10%;
+}
+
+footer{
+	width:100%;
+	position:absolute;
+	bottom: 2%;
+	margin:0;
+}
+footer p {
+	padding-left: 10%;
+	margin: 0;
+	font-size: 0.7em;
+	color: rgb(23,23,23);
+}
+footer:before{
+	width : 100%;
+	height: 1px;
+	content: "";
+	display: block;
+	background: linear-gradient(to right,
+							rgba(23,23,23, 0.2),
+							rgba(23,23,23, 1) 10%,
+							rgba(23,23,23, 0.1));
+}
+
+
+
+  
+form.login{
+	left: 40%;
+	width: 20%;
+	padding-top: 10%;
+	margin: 0 auto;
+	text-align: center;
+}
+form.login input{
+	content: "";
+	width: 100%;
+	border: 1px solid #2b2a2a;
+	border-radius: 10px;
+	float: left;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin-top: 3%;
+	font-size: 16px;
+	text-align: center;
+}
+form.login input.submit{
+	cursor: pointer;
+	background-color: #27b040;
+}
+form.login span{
+	font-size: 14px;
+	text-align: center;
+	color: red;
+	padding-top: 3%
+}
+
+form.add{
+	margin: 0 auto;
+	text-align: center;	
+}
+form.add input, .file{
+	margin-right: 1%;
+	content: "";
+	min-width: 10%;
+	border: 1px solid #2b2a2a;
+	border-radius: 10px;
+	float: left;
+	padding: 0.5em;
+	font-size: 14px;
+	text-align: center;
+	font-family: Arial;
+}
+.file p {
+	margin: 0;
+	opacity: 0.5;
+
+}
+form.add input.fake{
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	border:0;
+	padding: 0;
+}
+
+
+object.pdf{
+ }
+
+ul.slides{
+	margin: 0;
+	padding: 0;
+	width: inherit;
+	list-style-type: none;
+	padding-top: 2%;
+}
+ul.slides li{
+	height: 50px;
+	width: 100%;
+	float:left;
+	}
+ul.slides li.guide{
+	opacity: 0.5;
+}
+ul.slides li:after, ul.slides li:hover:after{
+	height: 1px;
+	margin-top: 33px;
+	content: "";
+	display: block;
+}
+ul.slides li.guide:after, ul.slides li.guide:hover:after{
+	display:none;
+}
+ul.slides li:hover:after{
+background: linear-gradient(to right,
+							rgba(23,23,23, 0.5) 10%,
+							rgba(23,23,23, 0.1));}
+ul.slides li ul{
+	width:10%;
+	margin-left: -40px;
+	padding-right: 3%;
+	text-align: left;
+	float:left;
+}
+
+
+
+ul.slides li ul.date{
+	width:17%;
+}
+
+ul.slides li ul.del{
+	opacity: 0.7;
+}
+ul.slides li ul.del:hover{
+	opacity: 1;
+	color: red;
+	cursor: pointer;
+}
+ul.slides li ul p{
+	margin:0;
+	font-size: 16px;
+	margin-top: 16px; 
+}
+
+#lecture{
+	height: inherit;
+	margin:0;
+	padding: 0;
+	float:left;
+}
+#chat{
+	height: inherit;
+	margin:	0;
+	padding: 0;
+	float: left;
+	}
+#timeline{
+	width: inherit;
+	max-height:78%;
+	overflow-y:scroll; 
+	position: absolute;
+	bottom:20%;
+	right:0px;
+
+}
+#switch{
+	width: 99%;
+	float: left;
+	padding: 1%;
+
+}
+form.question {
+	width: inherit;
+	padding: 0;
+	margin: 0;
+	height : 18%;
+	position: absolute;
+	bottom:2%;
+	right:0px;
+	float:left;
+}
+#add_question{
+	content: "";
+	background: #27b040;
+	border:1px solid #27b040;
+	border-bottom-left-radius: 20px;
+	width: 36%;
+	margin-left: 20px;
+	padding: 1em;
+    font-size: 14px;
+    cursor: pointer;
+    float: 	left;	
+}
+#add_inquiry{
+	content: "";
+	background: #27b040;
+	border:1px solid #27b040;
+	border-bottom-right-radius: 20px;
+	width: 36%;
+	margin-left: 0.5%;
+	padding: 1em;
+    font-size: 14px;
+    cursor: pointer;
+    float: 	left;
+}
+input.textarea{
+	border: 1px solid rgba(23,23,23,0.8);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 320px;
+    margin-left: 20px;
+    padding: 1em;
+    margin-bottom: 2px;
+    font-size: 14px;
+    
+}
+
+ul.questions{
+	padding: 0;
+	margin:0;
+	width: 100%;
+
+}
+ul.questions li{
+	min-height: 23px;
+	background: rgba(196,101,101,0.65);
+	list-style-type: none;
+	border:1px solid rgba(23,23,23,0.8);
+	border-radius:20px;
+	border-bottom-right-radius: 0px;
+	width: 78%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	float:left;
+	margin-left: 20px;
+	padding-left: 1em;
+	padding-right: 1em;}
+ul.questions li.solved{
+	background: rgba(140,225,150,1);
+}
+ul.questions li.inq{
+	background: #0E5D55;
+	color:#fff;
+	float: left;
+}
+ul.questions li p{
+	margin-top :1em;
+	
+}
+ul.questions li p.a1, ul.questions li p.a2 {
+	background-color: #2aa79a;
+	padding-left: 5px;
+	cursor: pointer;
+	
+}
+
+
+.poll-box {
+	height:30px;
+	background:#f00;
+	width:100%;
+	position: relative;
+}
+.poll-box-yes {
+	height:30px;
+	background: #0a0;
+}
+.poll-box span {
+	padding:0px 15px;
+	font-weight: bold;
+	position: absolute;
+	top:0;
+}
+@media all and (max-width:768px) {
+	#lecture,#switch {
+		display:none;
+	}
+	#timeline {
+		display: block;
+		position: relative;
+		top:auto;
+		bottom:auto;
+		right:auto;
+		width:100% !important;
+
+	}
+	form.question {
+		position: relative;
+		right:auto;
+		top:auto;
+		bottom:auto;
+		left:auto;
+		width:100%;
+		margin-top:20px;
+	}
+}
